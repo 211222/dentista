@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Médico</title>
+  <link rel="icon" type="image/png" href="imagenes/logoo.png">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="formulario.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario Médico</h2>
+    <form id="formulario" action="https://formsubmit.co/a73e7b92ba430d883f21ccdafd00c1ec"method="POST">
+      <div class="left-column">
+        <div class="form-control">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        
+        
+        <div class="form-control">
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="form-control">
+          <label for="numero">  Numero teléfonico:</label>
+          <input type="text"  id="numero" name="numero" required>
+        </div>
+        <div class="form-control">  
+          <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+          <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+      
+      </div>
+       <button type="submit">Confirmar</button>
+
+     <!-- <input type="hidden" name="_next" value="http://localhost:8000/">-->
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+    <div class="alert" id="alerta"></div>
+
+       <!-- TARJETA AGRADECIMIENTO -->
+
+       <div class="tarjeta-agradecimiento">
+        <h3 style="text-align:center; color:#3a9fce; ">¡Gracias por completar el formulario!</h3>
+            <p style="text-align:center; color: #666;">Nos pondremos en contacto contigo pronto.</p>
+       </div>
+            
+   
+
+
+  </div>
+
+  
+ 
+  <script >
+
+    /*document.addEventListener("DOMContentLoaded", function () {
+      const formulario = document.getElementById("formulario");
+    
+      formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+    
+        const nombre = document.getElementById("nombre").value;
+        const correo = document.getElementById("correo").value;
+        const numero = document.getElementById("numero").value;
+        const fechaNacimiento = document.getElementById("fecha_nacimiento").value;
+    
+        if (nombre === "" || correo === "" || numero === "" || fechaNacimiento === "") {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor completa todos los campos',
+          });
+        } else {
+          Swal.fire({
+            icon: 'success',
+            title: '¡Gracias por registrarte con nosotros!',
+            text: 'Te contactaremos para confirmar tu suscripción.',
+          }).then((result) => {
+            if (result.isConfirmed) {
+              formulario.reset();
+              window.location.href = "index.html"; // Cambia "pagina-de-inicio.html" por la URL de tu página de inicio
+            }
+          });
+        }
+      });
+    });*/
+    
+
+
+  </script>
+</body>
+</html>

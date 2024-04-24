@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista</title>
+    <link rel="icon" type="image/png" href="imagenes/logoo.png">
+    <link rel="stylesheet" href="scrip.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-tooth"></i>DENTALUCK</a>
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#about">Nosotros</a>
+            <a href="#services">Servicios</a>
+            <a href="#team">Odontologos</a>
+            <a href="#slider">Galeria</a>
+            <a href="#contact">Contacto</a>
+
+          
+
+        </nav>
+        <a href="formulario.html" class="btn">Suscripcion</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- Contenido de la página -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Bienvenido</h3>
+            <p>Tu sonrisa es nuestra prioridad</p>
+            
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h1 class="heading">Sobre nosotros</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="imagenes/diente.jpg" alt="">
+
+            </div>
+          
+
+            <div  class="content">
+                <h3>¿Quiénes somos?</h3>
+                <p>Somos un equipo de desarrolladores interesados por la salud dental y la tecnología.
+                    Nos dedicamos a crear una solución innovadora para mejorar la experiencia de los pacientes. 
+                    Nuestros odontólogos trabajan para 
+                    proporcionar la mejor atención y tratamiento dental.</p>
+                
+            </div>
+
+
+        </div>
+        <!-- Contenido de la sección de servicios -->
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">Nuestros servicios</h1>
+        <div class="box-container">
+            <div class="box">
+               <!--<i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>  Icono de limpieza dental -->
+               <img src="imagenes/limpieza.png" alt=""> 
+                <h3>Limpieza dental</h3>
+                <p>La limpieza dental es un procedimiento fundamental para mantener una buena salud bucal. </p>
+            </div>
+            
+            
+            <div class="box">
+               <!--<i class="fas fa-teeth fa-3x" style="color: #3a9fce;"></i> --> 
+
+             <img src="imagenes/blanquear.png" alt="">  
+                <h3>Blanqueamiento dental</h3>
+                <p>El blanqueamiento dental es un tratamiento estético que ayuda a mejorar el color de los dientes. </p>
+            </div>
+            <div class="box">
+               <!--<i class="fas fa-align-center fa-3x" style="color: #3a9fce;"></i> --> 
+               <img src="imagenes/ortodo.png" alt="">
+                <h3>Ortodoncia</h3>
+                <p>La ortodoncia es un tratamiento para corregir la posición de los dientes y la mandíbula. </p>
+            </div>
+           
+        </div>
+       
+
+    </section>
+    <section class="team" id="team">
+        <h1 class="heading">Nuestros odontólogos</h1>
+        <div class="swiper team-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide  slide">
+                    <div class="image-container">
+                        <img class="team-member-image" src="imagenes/img4.jpeg" alt="Image Description">
+                        <div class="share">
+
+                            <a href="https://www.facebook.com/?locale=es_LA" class="fab fa-facebook-f"></a>
+                            <a href="https://www.instagram.com/dra.fryda.aleman?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="fab fa-instagram f1"></a>
+                            <a href="https://mx.linkedin.com/?src=go-pa&trk=sem-ga_campid.19001150288_asid.143806640876_crid.694479389938_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1031352&mcid=7000592715335761922&cid=&gad_source=1&gclid=EAIaIQobChMIlbrfyrLHhQMV-TfUAR18bAwBEAAYASAAEgLHQ_D_BwE&gclsrc=aw.ds" class="fab fa-linkedin f"></a>
+    
+                        </div>
+                        
+                           
+                       
+                    </div>
+                    <div class="overlay">
+                        <div class="content">
+                            <h3>Dra. Fryda Jennifer Alemán Jimenéz</h3>
+                            <span>Medico Odontólogo</span>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                <!-- Add more team members here -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <!-- Tarjeta de información adicional del odontólogo -->
+    <div class="team-member-info" id="team-member-info">
+        <div class="card">
+            <div class="card-header">
+                <h2>Servicios</h2>
+            </div>
+            <div class="card-body">
+                <div class="tarjeta-container">
+                   
+                    <div class="tarjeta">
+                        <i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>
+                     <h3>Consulta</h3>
+                     <strong>Precio:</strong> $500
+    
+                    </div>
+                    <div class="tarjeta">
+                        <i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>
+                     <h3>Resina estética</h3>
+                     <strong>Precio:</strong> $600
+    
+                    </div>
+                    <div class="tarjeta">
+                        <i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>
+                     <h3>Limpieza ultrasónica </h3>
+                     <strong>Precio:</strong> $500
+    
+                    </div>
+                    <div class="tarjeta">
+                        <i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>
+                     <h3>Extracción simple</h3>
+                     <strong>Precio:</strong> $600
+    
+                    </div>
+                    <div class="tarjeta">
+                        <i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>
+                     <h3>Extracción complicada</h3>
+                     <strong>Precio:</strong> $800
+    
+                    </div>
+                    <div class="tarjeta">
+                        <i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>
+                     <h3>Aplicación de flúor</h3>
+                     <strong>Precio:</strong> $500
+    
+                    </div>
+                    <div class="tarjeta">
+                        <i class="fas fa-tooth fa-3x" style="color: #3a9fce;"></i>
+                     <h3>Selladores de rosetas y fisuras</h3>
+                     <strong>Precio:</strong> $500
+    
+                    </div>
+                </div>
+               
+                 
+                
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    
+<section class="slider" id="slider" >
+
+    <h1 class="heading">Galeria </h1>
+
+    <div class="gallery">
+
+
+        
+
+        <div class="gallery-item">
+            <img src="imagenes/imag2.png" alt="Imagen 1">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/imag3.png" alt="Imagen 2">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/imag4.png" alt="Imagen 3">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/imag1.png" alt="Imagen 3">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/imag5.png" alt="Imagen 3">
+        </div>
+    </div>
+    
+   
+
+</section>
+
+
+    
+
+    
+<section class="contact" id="contact">
+    <h1 class="heading">Contacto </h1>
+    <form id="contactForm" action="https://formsubmit.co/a73e7b92ba430d883f21ccdafd00c1ec"method="POST">
+        <span>Nombre</span>
+        <div class="inputBox">
+            <input type="text" id="nombre" placeholder="Nombre" name="Nombre" required>
+            <input type="text" id="apellidos" placeholder="Apellidos" name="Apellidos" required>
+        </div>
+
+        <span>Correo </span>
+        <input type="email" id="correo" placeholder="Correo electrónico" class="box" name="Correo" required>
+
+        <span>Numero</span>
+        <input type="number" id="numero" placeholder="Numero telefónico" class="box" name="Numero" required>
+
+        <span>Fecha</span>
+        <input type="datetime-local" id="fecha" class="box" name="Fecha" required>
+
+        <input type="submit" value="Enviar" class="btn">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content" style="text-align: center;">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-university"></i> Universidad Politécnica de Chiapas</p>
+                <p><i class="fas fa-phone"></i> Teléfono: 9613559252</p>
+                <p><i class="far fa-envelope"></i> Correo electrónico: danirachampo@gmail.com</p>
+            </div>
+            
+            
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dentaluck. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    
+    <script>
+
+        const teamMemberImage = document.querySelector('.team-member-image');
+        const teamMemberInfo = document.getElementById('team-member-info');
+    
+        teamMemberImage.addEventListener('click', () => {
+           
+            if (teamMemberInfo.style.right === '-400px') {
+                teamMemberInfo.style.right = '20px'; 
+            } else {
+                teamMemberInfo.style.right = '-400px'; 
+            }
+        });
+    
+        // Cerrar la ventana al hacer clic fuera de ella
+        document.addEventListener('click', (event) => {
+            const targetElement = event.target;
+            if (!teamMemberInfo.contains(targetElement) && !teamMemberImage.contains(targetElement)) {
+                teamMemberInfo.style.right = '-400px'; // Ubicación fuera de la pantalla
+            }
+        });
+    
+        const menuBtn = document.getElementById('menu-btn');
+     const navbar = document.querySelector('.navbar');
+  
+     menuBtn.addEventListener('click', function() {
+         navbar.classList.toggle('active');
+     });
+     
+
+     //formulario
+    /* document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); 
+    
+            
+            var nombre = document.getElementById('nombre').value;
+            var apellidos = document.getElementById('apellidos').value;
+            var correo = document.getElementById('correo').value;
+            var numero = document.getElementById('numero').value;
+            var fecha = document.getElementById('fecha').value;
+    
+           
+            if (!nombre.trim()) {
+                showAlert('Por favor, ingresa tu nombre');
+                return;
+            }
+            if (!apellidos.trim()) {
+                showAlert('Por favor, ingresa tus apellidos');
+                return;
+            }
+    
+           
+            if (!correo.trim()) {
+                showAlert('Por favor, ingresa tu correo electrónico');
+                return;
+            }
+    
+            
+            if (!numero.trim()) {
+                showAlert('Por favor, ingresa tu número telefónico');
+                return;
+            }
+            if (!fecha.trim()) {
+                showAlert('Por favor, ingresa fecha y hora');
+                return;
+            }
+    
+          
+            showSuccessAlert('¡Gracias por ponerte en contacto con nosotros! Nos pondremos en contacto contigo lo antes posible.'); 
+            
+        });
+    });
+    
+    function showAlert(message) {
+        swal("Oops...", message, "error");
+    }
+    
+    function showSuccessAlert(message) {
+        swal("¡Bien!", message, "success")
+            .then((value) => {
+                
+                document.getElementById('nombre').value = '';
+                document.getElementById('apellidos').value = '';
+                document.getElementById('correo').value = '';
+                document.getElementById('numero').value = '';
+                document.getElementById('fecha').value = '';
+            });
+    }*/
+    
+     
+    </script>
+    
+    
+    
+    
+    
+    
+
+
+</body>
+</html>

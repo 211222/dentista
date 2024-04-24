@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background: linear-gradient(to bottom right, #8ec4d5, #ffffff); /* Fondo degradado */
+ 
+  }
+  
+  .container {
+    max-width: 700px; /* Ancho máximo del contenedor */
+    margin: 100px auto; /* Ajuste del margen superior e inferior */
+    padding: 40px; /* Aumento del espaciado interno del contenedor */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto para un efecto visual */
+  }
+  
+  .left-column,
+  .right-column {
+    float: left;
+    width: 50%;
+  }
+  
+  .form-control {
+    margin-bottom: 30px; /* Separación entre los campos de entrada */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  button {
+    width: calc(80% - 20px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus,
+  input[type="password"]:focus,
+  button:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    display: block; /* Cambia a bloque para ocupar el ancho completo */
+    text-transform: uppercase; /* Texto del botón en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .alert {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    color: #721c24;
+    display: none;
+  }
+  /* Estilos para la tarjeta de agradecimiento */
+
+
+
+
+.tarjeta-agradecimiento h3 {
+    color: #333;
+    font-size: 24px;
+   
+    text-align: center;
+    
+}
+
+.tarjeta-agradecimiento p {
+    color: #666;
+    font-size: 16px;
+   
+    text-align: center;
+}
